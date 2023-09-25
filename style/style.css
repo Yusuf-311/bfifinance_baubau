@@ -1,37 +1,54 @@
+/* Background Styles */
 .background {
-  background:
-    url(../image//hero.png),
-    lightgray 0px 0px / 100% 100% no-repeat;
+  background: url(../image/hero.png) lightgray 0px 0px / 100% 100% no-repeat;
   background-size: cover;
   width: 100%;
   height: 609.52px;
   max-width: 1600px;
 }
 
+/* Button Styles */
 .btn-price {
   background: #8077f5;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
   border: 1px solid #8077f5;
-  color: #ffff;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Hover effect for price buttons */
 .btn-price:hover {
-  background: #6962d3;
-  color: #ffff;
+  background-color: #6a63d0;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* Card Styles */
+.card {
+  width: 100%;
+  height: auto;
 }
 
+/* Typography Styles */
+.gx-3 h5 {
+  font-weight: 600;
+}
+
+.gx-3 p {
+  color: #676075;
+}
+
+/* Flip Card Styles */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  height: 100%;
   perspective: 1000px;
+}
+
+.flip-section img {
+  border-radius: 5%;
 }
 
 .flip-card-inner {
@@ -41,7 +58,6 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -53,29 +69,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
-}
-.card {
-  width: 100%;
-  height: auto;
-}
-
-.gx-3 h5 {
-  font-weight: 600;
-}
-
-.gx-3 p {
-  color: #676075;
 }
